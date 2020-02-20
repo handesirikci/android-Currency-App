@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView; // in order to display a scrolling list of elements based on large or frequently changing data sets
     private CurrencyItemAdapter mAdapter;  //Adapters provide a binding from data set to views that are displayed within a RecyclerView
     private Map<String,Double> currencyMap; // maps every currency to its value
-    private String data= ""; // string that will hold the data taken from api
+    private String data= "";
 
 
     @Override
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        
+
     }
 
 }
