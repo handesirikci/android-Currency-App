@@ -5,32 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center_vertical"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     tools:context=".activities.ShowCurrencyActivity">
 
-    <TextView
-        android:id="@+id/showName"
+    <LinearLayout
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:layout_weight="0.5"
-        android:layout_gravity="bottom"
-        android:layout_marginTop="170dp"
-        android:textSize="30dp"
-        >
-    </TextView>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/showName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="name"
+            android:textSize="30dp"
+            >
+        </TextView>
 
-    <TextView
-        android:id="@+id/showValue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textAlignment="center"
-        android:layout_marginTop="0dp"
-        android:textSize="70dp">
+        <TextView
+            android:id="@+id/showValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:textAlignment="center"
+            android:textSize="70dp">
 
-
-    </TextView>
+        </TextView>
+    </LinearLayout>
 
 </LinearLayout>
